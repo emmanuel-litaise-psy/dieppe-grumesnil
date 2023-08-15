@@ -1,0 +1,160 @@
+body {
+    margin: 0;
+    padding: 0;
+
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+nav {
+    /* font-size: 100%; */
+    /* display: flex;
+    flex-wrap: wrap; */
+    /*align-items: center;*/
+
+    background-color: rgb(51, 51, 51);
+    color: white;
+
+    padding: 10px 20px;
+}
+
+/* .nav h1{
+    padding: 10px 20px 10px 20px;
+    
+} */
+
+.onglets {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+
+    justify-content: center;
+}
+
+.onglets a {
+    color: white;
+    text-decoration: none;
+    /* padding: 10px 20px 10px 20px; */
+    padding: 10px 20px;
+
+    font-size: 14px;
+
+    white-space: nowrap;
+    transition: 0.2s;
+}
+
+.onglets a:hover {
+    background-color: rgb(82, 82, 82);
+}
+
+a.active {
+    background-color: rgb(82, 82, 82);
+}
+
+.page {
+    display: none;
+    padding: 3vh 0;
+    min-height: 63vh;
+}
+
+.page.active {
+    display: block;
+}
+
+.logo {
+    letter-spacing: 7.5px;
+    font-size: 32px;
+    text-align: center;
+}
+
+.image-first {
+    width: 100%;
+    overflow: hidden;
+}
+
+.image-second {
+    width: 70%;
+    overflow: hidden;
+    display: flex;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+
+.presentation-text{
+    width: 70%;
+    
+    padding-top: 0;
+    margin-top: 0;
+}
+.image-third {
+    width: 30%;
+    padding-right: 20px;
+    object-fit: cover;
+}
+
+.présentation {
+    display: flex;
+    flex-wrap: wrap;
+}
+/* SECTION RESPONSIVE PAGE */
+.pages {
+    padding: 5vh 5vw;
+    margin: 0vh 15vw;
+    background-color: rgb(241, 241, 241);
+}
+
+.flex-presentation{
+    display: flex;
+    text-align: justify;
+}
+
+@media screen and (max-width: 700px) {
+    .pages {
+        margin: 0vh 0vw;
+
+        /* padding: 5vh 5vw;
+        margin: 0vh 15vw; */
+    }
+
+    .image-first {
+        width: 100%;
+    }
+
+    .image-second {
+        width: 100%;
+    }
+
+    .image-third{
+        width: 100%
+    }
+
+    .flex-presentation{
+        display: block;
+    }
+
+    .presentation-text{
+        width: 100%;
+        
+        padding-top: 20px;
+    }
+}
+
+/* SECTION RESPONSIVE PAGE */
+
+.footer{
+    background-color: rgb(51, 51, 51);
+    color: white;
+
+    padding: 10px 20px;
+    font-size: 14px;
+    display: flex;
+    flex-direction: column;
+    margin-top: auto;
+    
+    
+}
+
+h1{
+    margin-top: 0;
+}
+

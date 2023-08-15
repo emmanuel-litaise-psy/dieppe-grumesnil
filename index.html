@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Emmanuel LITAISE</title>
+    <link rel="stylesheet" href="style.css">
+
+    <link rel="icon" href="favicon.ico" />
+
+    <!--Javascript pour l'affichage des pages-->
+
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script>
+        $(document).ready(function () {
+            $('#onglet-accueil').addClass('active');
+            $('.page-title').hide();
+            $('#onglet-accueil .page-title').show();
+
+            $('.onglets a').on('click', function (event) {
+                event.preventDefault();
+
+                var targetPage = $(this).attr('href');
+
+                $('.page').removeClass('active');
+                $('.onglets a').removeClass('active');
+                $(targetPage).addClass('active');
+                $(this).addClass('active');
+
+                $('.page-title').hide();
+                $(targetPage + ' .page-title').show();
+            });
+        });
+    </script>
+</head>
+
+<body>
+
+    <!-- Définition du logo et des onglets -->
+
+    <nav>
+        <h1 class="logo">EMMANUEL LITAISE</h1>
+        <div class="onglets">
+            <a href="#page-accueil" id="onglet-accueil">Accueil</a>
+            <a href="#page-presentation">Présentation</a>
+            <a href="#page-cabinet-dieppe">Cabinet de Dieppe</a>
+            <a href="#page-cabinet-grum">Cabinet de Grumesnil</a>
+            <a href="#page-problematiques">Problématiques principales traitées</a>
+            <a href="#page-pratique">Outils thérapeutiques </a>
+        </div>
+    </nav>
+
+    <!-- Création des différentes pages -->
+
+    <section class="pages">
+        <div id="page-accueil" class="page active">
+            <h4>Accueil</h4>
+                <ul>
+                    <li>Psychologue Clinicien</li><br>
+                    <li>Accompagnement individuel ou familial pour adultes et enfants à l'aide de thérapie brève</li><br>
+                    <br>
+                    <ul>Contact <br>
+                        <br>
+                        <li><a href="tel:06.95.02.42.78">06.95.02.42.78</a></li>
+                        <br>
+                        <li><a href="mailto:elitaise@yahoo.fr">elitaise@yahoo.fr</a></li>
+                    </ul>
+                    <br>
+                    <br>    
+                    <li>Cabinet de Dieppe: 10 rue Desceliers - 76200 Dieppe</li><br>
+                    <li>Cabinet de Grumesnil: 26 rue Tracia - 76440 Grumesnil</li><br>
+                        <br>
+                    <li>Possibilités de consultation à domicile et via skype.</li><br>
+                        
+                    <li>N° Adeli : 769315797</li>
+                </ul>
+        </div>
+
+        <div id="page-presentation" class="page">
+
+            <div class="flex-presentation"><img src="/images/emmanuel n&b.jpg" alt="Photo-présentation" class="image-third">
+                
+                <p class="presentation-text">Suite à un début de carrière professionnelle dans la haute technologie avec un diplôme d'ingénieur, j'ai décidé en 2008 de reprendre mes études en psychologie clinique à l'université. <br>
+                    <br>
+                    Thérapeute formé sur une pratique intégrative, je m'emploie à aider la personne d'une façon globale en incluant les dimensions individuelles, familiales, culturelles et sociétales susceptibles de perturber le fonctionnement psychique, émotionnel et d'entrainer des comportements inadaptés. <br>
+                    <br>
+                    Je fonde ma relation d'aide selon 3 principes majeurs: l'empathie, l'écoute active et la neutralité bienveillante. <br>
+                    <br>
+                    Afin d'accompagner l'individu dans ses questionnements, ses problématiques et ses volontés de changement, j'utilise différents outils tels que l'hypnose, l'EMDR, des pratiques de thérapies familiales ainsi que des pratiques cognitivo-comportementales. <br>
+                    <br>
+                    Je reçois en rendez-vous les enfants, les adolescents et les adultes. J'alterne les consultations une semaine sur deux entre le cabinet en plein centre ville de Dieppe et celui de Grumesnil situé au coeur de la nature normande.</p>
+                    </div>
+            
+            
+        </div>
+
+        <div id="page-cabinet-dieppe" class="page">
+            <h1 class="title-cabinet">Cabinet de Dieppe</h1>
+            <span><a href="http://maps.google.com/?q=10 rue Desceliers, 76200 Dieppe">10 rue Desceliers 76200 Dieppe </a>(fond de cour à gauche)</span>
+
+            <p>
+                <h4>Horaires :</h4>
+                <ul>
+                    <li>Du Lundi au Vendredi (1 semaine sur 2) de 9h à 19h</li>
+                    <li>Le Samedi de 9h à 12h (1 semaine sur 2)</li>
+                </ul>
+            </p>
+
+            <p>
+                <h4>Tarif :</h4>
+                <ul>
+                    <li>60€ la séance</li>
+                </ul>
+            </p>
+
+            <p>
+                <h4>Durée de la scéance :</h4>
+                <ul>
+                    <li>De 1h à 1h30</li>
+                </ul>
+            </p>
+
+            <p>
+                <h4>Contact :</h4>
+                <ul>
+                    <li><a href="tel:06.95.02.42.78">06.95.02.42.78</a></li>
+                </ul>
+            </p>
+
+            <img src="/images/dieppe_2.png" alt="Cabinet de Dieppe" class="image-first">
+            <img src="/images/dieppe_1.png" alt="Cabinet de Dieppe" class="image-first">
+        </div>
+
+        <div id="page-cabinet-grum" class="page">
+            <h1 class="title-cabinet">Cabinet de Grumesnil</h1>
+            <span><a href="http://maps.google.com/?q=Bois de la Garenne, Grumesnil">26 rue Tracia 76440 Grumesnil</a> (2km après la sortie de Grumesnil en direction de Gaillefontaine sur la RD135).</span>
+
+            <p>
+                <h4>Horaires :</h4>
+                <ul>
+                    <li>Du Lundi au Vendredi (1 semaine sur 2) de 9h à 19h</li>
+                    <li>Le Samedi de 9h à 12h (1 semaine sur 2)</li>
+                </ul>
+            </p>
+
+            <p>
+                <h4>Tarif :</h4>
+                <ul>
+                    <li>50€ la séance</li>
+                </ul>
+            </p>
+
+            <p>
+                <h4>Durée de la scéance :</h4>
+                <ul>
+                    <li>De 1h à 1h30</li>
+                </ul>
+            </p>
+
+            <p>
+                <h4>Contact :</h4>
+                <ul>
+                    <li><a href="tel:06.95.02.42.78">06.95.02.42.78</a></li>
+                </ul>
+            </p>
+
+            <img src="/images/Grumesnil 2.png" alt="Cabinet de Grumesnil" class="image-second">
+            <img src="/images/Grumesnil 1.png" alt="Cabinet de Grumesnil" class="image-second">
+            
+        </div>
+
+        <div id="page-problematiques" class="page">
+            <p>
+                <h3>Problématiques principales traitées:</h3>
+                    <ul>
+                        <li>Séparations et deuils douloureux</li><br>
+                        <br>
+                        <li>Traumatisme lié à un ou des évènements particuliers (abus sexuels, viols, accidents, incendies...)</li><br>
+                        <br>
+                        <li>Confiance en soi altérée</li><br>
+                        <br>
+                        <li>Phobies</li><br>  
+                        <br>
+                        <li>Addictions</li><br>
+                        <br>
+                        <li>Gestion des émotions</li><br>
+                        <br>
+                        <li>Gestion de l'anxiété individuelle, scolaire ou professionnelle</li><br>
+                        <br>
+                        <li>Burn out</li><br>
+                        <br>
+                        <li>Harcèlement (scolaire, professionnel, familial)</li><br>
+                </ul>
+            </p>
+        </div>
+
+        <div id="page-pratique" class="page">
+
+            <h1 class="title-pratique">Outils thérapeutiques</h1>
+
+            <p>
+                <h4>EMDR </h4>
+                <ul>
+                    <li>(Eye Movement Desensitization and Reprocessing – « Mouvements des yeux qui déprogramment et re-traitent ») </li><br>
+                        <br>
+                    <li>Une approche qui traite le ou les traumatismes qu’ils soient simples (accidents, évènements difficiles ponctuels), ou complexes (différentes situations au cours de la vie, avec une forme de répétition). </li><br>
+                        <br>
+                    <li>Le traumatisme peut entraîner des changements radicaux dans le fonctionnement d’une personne bouleversant l’individu à long terme car il s’enkyste à différents niveaux dans l’émotionnel, le cognitif et le sensoriel. </li><br>
+                        <br>
+                    <li>L’EMDR permet, par une approche multi-axiale de débloquer les données dans le système limbique (zone émotionnelle du cerveau) en calmant le système émotionnel grâce aux mouvements alternatifs des yeux ou du taping. </li><br>
+                    
+                </ul>
+            </p>
+
+            <p>
+                <h4>Hypnose</h4>
+                <ul>
+                    <li>L’hypnose se pratique depuis bien longtemps et cette technique ancienne est utilisée dans les soins de toutes sortes. </li> <br>
+                    <br>
+                    <li>Grâce à la parole, le praticien va induire un état de conscience modifié qui est caractérisé par une hyper-concentration, une hyper-suggestibilité et une indifférence à l’extérieur.</li> <br>
+                    <br>
+                    <li>Cet état particulier stimule et amplifie les ressources internes du sujet permettant une meilleure gestion de la douleur et des blocages rencontrés.</li> <br>
+                    <br>
+                    <li>J'utilise une hypnose intégrative et non directive qui laisse toute la place à l’individu dans son changement, c’est un accompagnement. </li> <br>
+                    <br>
+                    <li>Cette technique permet dans certains cas de résoudre des traumatismes psychiques en effectuant une dsensibilisation par double dissociation.</li> <br>
+                </ul>
+            
+            </p>
+
+            
+            
+        </div>
+    </section>
+
+    <footer class="footer">
+        © 2021 Emmanuel Litaise
+    </footer>
+
+</body>
+
+</html>
