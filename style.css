@@ -62,7 +62,7 @@ a.active {
 
 .logo {
     letter-spacing: 7.5px;
-    font-size: 32px;
+    font-size: 25px;
     text-align: center;
 }
 
@@ -79,6 +79,10 @@ a.active {
     margin-right: auto;
 }
 
+.image-icon {
+    width: 25%;
+    float:right;
+}
 
 .presentation-text{
     width: 70%;
